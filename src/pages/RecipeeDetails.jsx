@@ -6,7 +6,7 @@ const RecipeeDetails = ()=>{
 const {id} = useParams()
 const {data:recipee, loading, error} = useFetch(`https://mcr-be-recipee-organiser.vercel.app/recipees/${id}`)
 if (loading) {
-    return <div>Loading event details...</div>;
+    return <div>Loading Recipee details...</div>;
   }
 
   if (error) {
